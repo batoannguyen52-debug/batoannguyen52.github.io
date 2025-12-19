@@ -6,15 +6,23 @@
   
   <title>Toan's site</title>
 
-  <meta property="og:title" content="Toan's site" />
-  <meta property="og:url" content="http://localhost:5173/" />
+  <meta name="title" content="Toan's Site">
+  <meta name="description" content="Hi, I am Ba Toan, a student at VNUK.">
+  <meta name="keywords" content="web, IT students">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+  <meta name="author" content="Nguyen Ba Toan">
+
+  <meta property="og:title" content="Toan's Site" />
+  <meta property="og:url" content="https://batoannguyen52-debug.github.io/batoannguyen52.github.io/" />
   <meta property="og:image" content="image/Screenshot (95).png" />
 
   <meta name="twitter:title" content="Toan's Site">
   <meta name="twitter:description" content="Hi, I am Ba Toan, a student at VNUK.">
   <meta name="twitter:image" content="image/Screenshot (95).png">
   <meta name="twitter:card" content="Toan's Site">
-
+  <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="Public/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="Public/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="Public/favicon-16x16.png">
@@ -49,17 +57,29 @@
     .about-section {
       background-color: #1dd1b2;
       color: white;
-      padding: 64px 0;
+      min-height: 100vh; /* PHÓNG TO TOÀN MÀN HÌNH */
+      padding: 80px 0;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
     .about-card {
-      max-width: 800px;
+      max-width: 1000px;
       margin: auto;
     }
 
     /* CONTACT */
     .contact-section {
-      padding: 64px 0;
+      min-height: 100vh;              /* PHÓNG TO FULL MÀN HÌNH */
+      padding: 80px 20px;
+
+      display: flex;                  /* CĂN GIỮA */
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
     .btn-main {
@@ -76,8 +96,8 @@
 <body>
 
 <!-- HERO SECTION -->
+ <!-- banner -->
 <div class="bgimg w3-display-container w3-text-white">
-
   <div class="w3-display-middle w3-center">
     <h1 class="w3-jumbo w3-animate-top">
       <span class="banner-text"> Hi, my name is <span style="color:#1dd1b2;">Nguyễn Bá Toàn</span></span>
@@ -87,33 +107,34 @@
     </h3>
     <br>
     <button class="w3-button btn-main w3-round-large">
-      Know More
+      <a href="#about-me" class="hero-btn">KNOW MORE</a>
     </button>
   </div>
+</section>
+    <!-- banner ./ -->
 
 </div>
 
 <!-- ABOUT ME -->
-<div class="about-section w3-center">
-  <h2 class="w3-xxlarge">ABOUT ME</h2>
-  <br>
+<div id="about-me" class="about-section">
+  <h2 class="w3-xxxlarge w3-padding-16"><b>ABOUT ME</b></h2>
 
   <div class="about-card w3-row-padding w3-margin-top">
 
-    <div class="w3-col m4">
-      <img src="image/Screenshot (95).png"
-           class="w3-circle"
-           style="width:200px">
+    <div class="w3-col s12 m5 w3-center">
+      <img
+        src="image/Screenshot (95).png"
+        class="w3-circle w3-card-4"
+        style="width:260px">
     </div>
 
-    <div class="w3-col m8 w3-left-align">
-      <p>
-        I'm a passionate web developer, and I love building modern,
-        responsive websites. I enjoy learning new technologies and
-        turning ideas into real products.
-      </p>
+    <p class="w3-large">
+        I am a passionate web developer who enjoys creating modern,
+        responsive, and user-friendly websites. I focus on clean code,
+        good UI/UX, and continuous learning.
+    </p>
 
-      <button class="w3-button w3-white w3-text-teal w3-round-large">
+      <button class="w3-button w3-white w3-text-teal w3-round-large w3-margin-top">
         View My CV
       </button>
     </div>
@@ -123,7 +144,9 @@
 
 <!-- CONTACT -->
 <div class="contact-section w3-center">
-  <h2 class="w3-xxlarge">CONTACT</h2>
+  <h2 class="w3-xxxlarge w3-padding-16">
+    <b>CONTACT</b>
+  </h2>
   <p style="color:#1dd1b2;">
     I LOOK FORWARD TO WORKING WITH YOU
   </p>
