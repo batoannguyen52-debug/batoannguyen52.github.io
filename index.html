@@ -1,40 +1,149 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-  <title>My Site</title>
+<html lang="vi">
+<head>  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Toan's site</title>
+
+  <meta property="og:title" content="Toan's site" />
+  <meta property="og:url" content="http://localhost:5173/" />
+  <meta property="og:image" content="image/Screenshot (95).png" />
+
+  <meta name="twitter:title" content="Toan's Site">
+  <meta name="twitter:description" content="Hi, I am Ba Toan, a student at VNUK.">
+  <meta name="twitter:image" content="image/Screenshot (95).png">
+  <meta name="twitter:card" content="Toan's Site">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="Public/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="Public/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="Public/favicon-16x16.png">
+  <link rel="manifest" href="Public/site.webmanifest">
+  <!-- W3.CSS -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
-    body,
-    h1 {
-      font-family: "Raleway", sans-serif
+    body, h1, h2, h3 {
+      font-family: "Raleway", sans-serif;
     }
 
-    body,
-    html {
-      height: 100%
+    html, body {
+      height: 100%;
     }
 
+    /* HERO */
     .bgimg {
-      background-image: url('https://images.unsplash.com/photo-1515256722043-0f2b082ddadc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80');
+      background-image: url('https://images.unsplash.com/photo-1515256722043-0f2b082ddadc');
       min-height: 100%;
       background-position: center;
       background-size: cover;
+    }
+
+    /* ABOUT SECTION */
+    .about-section {
+      background-color: #1dd1b2;
+      color: white;
+      padding: 64px 0;
+    }
+
+    .about-card {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    /* CONTACT */
+    .contact-section {
+      padding: 64px 0;
+    }
+
+    .btn-main {
+      background-color: #1dd1b2;
+      color: white;
+    }
+
+    .btn-main:hover {
+      background-color: #10ac84;
     }
   </style>
 </head>
 
 <body>
-  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-    <div class="w3-display-topleft w3-padding-large w3-xlarge">
-      Logo
-    </div>
-    <div class="w3-display-middle">
-      <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
-    </div>
+
+<!-- HERO SECTION -->
+<div class="bgimg w3-display-container w3-text-white">
+
+  <div class="w3-display-middle w3-center">
+    <h1 class="w3-jumbo w3-animate-top">
+      <span class="banner-text"> Hi, my name is <span style="color:#1dd1b2;">Nguyễn Bá Toàn</span></span>
+    </h1>
+    <h3 class="w3-animate-opacity">
+      <span class="banner-text"> I'm the Web Developer</span>
+    </h3>
+    <br>
+    <button class="w3-button btn-main w3-round-large">
+      Know More
+    </button>
   </div>
+
+</div>
+
+<!-- ABOUT ME -->
+<div class="about-section w3-center">
+  <h2 class="w3-xxlarge">ABOUT ME</h2>
+  <br>
+
+  <div class="about-card w3-row-padding w3-margin-top">
+
+    <div class="w3-col m4">
+      <img src="image/Screenshot (95).png"
+           class="w3-circle"
+           style="width:200px">
+    </div>
+
+    <div class="w3-col m8 w3-left-align">
+      <p>
+        I'm a passionate web developer, and I love building modern,
+        responsive websites. I enjoy learning new technologies and
+        turning ideas into real products.
+      </p>
+
+      <button class="w3-button w3-white w3-text-teal w3-round-large">
+        View My CV
+      </button>
+    </div>
+
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="contact-section w3-center">
+  <h2 class="w3-xxlarge">CONTACT</h2>
+  <p style="color:#1dd1b2;">
+    I LOOK FORWARD TO WORKING WITH YOU
+  </p>
+
+  <p>
+    If you want to work with me, let's create something amazing together.
+  </p>
+
+  <button class="w3-button btn-main w3-round-large">
+    Send Email Now
+  </button>
+</div>
+
+<!-- FOOTER -->
+<footer class="w3-center w3-black w3-padding-24">
+  <a href="#" class="w3-button w3-black"><i class="fab fa-twitter"></i></a>
+  <a href="#" class="w3-button w3-black"><i class="fab fa-linkedin"></i></a>
+  <a href="#" class="w3-button w3-black"><i class="fab fa-github"></i></a>
+</footer>
+<script type="module" src="/src/scripts/application.js"></script>
 </body>
 </html>
+
